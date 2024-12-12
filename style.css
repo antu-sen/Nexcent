@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 1170px;
+  margin: auto;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+:root {
+  --font-family: "Inter", sans-serif;
+  --second-family: "Montserrat", sans-serif;
+  --neutral-white: #fff;
+  --neutral-silver: #f5f7fa;
+  --neutral-grey-blue: #abbed1;
+  --neutral-l-grey: #89939e;
+  --neutral-grey: #717171;
+  --neutral-d-grey: #4d4d4d;
+  --neutral-black: #263238;
+  --neutral-white-stroke: #abbed1;
+  --brand-info: #2194f3;
+  --brand-secondary: #263238;
+  --brand-primary: #4caf4f;
+  --shade-s1: #43a046;
+  --shade-s2: #388e3b;
+  --shade-s3: #237d31;
+  --shade-s4: #1b5e1f;
+  --shade-s5: #103e13;
+  --tint-t1: #66bb69;
+  --tint-t2: #81c784;
+  --tint-t3: #a5d6a7;
+  --tint-t4: #c8e6c9;
+  --tint-t5: #e8f5e9;
+  --action-success: #2e7d31;
+  --action-error: #e53835;
+  --action-warning: #fbc02d;
+}
+/* common end */
+/* nav */
+nav ul li {
+  display: inline-block;
+  padding: 30px 25px;
+}
+nav .row {
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul li a {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: #18191f;
+  transition: 0.2s;
+}
+nav ul li a:hover {
+  color: var(--brand-primary);
+}
+
+nav .signup .log {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 143%;
+  text-align: center;
+  color: var(--brand-primary);
+  border-radius: 6px;
+  padding: 10px 20px;
+  transition: 0.2s;
+}
+nav .signup .log:hover {
+  background: transparent;
+  border: 1px solid var(--brand-primary);
+}
+nav .signup .sign {
+  background: var(--brand-primary);
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 143%;
+  text-align: center;
+  color: var(--neutral-white);
+  border-radius: 6px;
+  padding: 10px 20px;
+  transition: 0.2s;
+}
+nav .signup .sign:hover {
+  background: transparent;
+  color: var(--brand-primary);
+  border: 1px solid var(--brand-primary);
+}
+
+/* nav end */
+
+/* banner */
+#banner {
+  background: var(--neutral-silver);
+  padding: 96px 144px;
+}
+#banner .row {
+  justify-content: space-between;
+  align-items: center;
+}
+#banner h2 {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 119%;
+  color: var(--neutral-d-grey);
+  margin-bottom: 16px;
+}
+
+#banner h2 span {
+  color: var(--brand-primary);
+  margin-bottom: 16px;
+}
+
+#banner p {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--neutral-grey);
+  margin-bottom: 32px;
+}
+#banner .bannerCnt {
+  width: 60%;
+}
+#banner .bannerImg {
+  width: 40%;
+  text-align: right;
+}
+#banner .bannerCnt a {
+  background: var(--brand-primary);
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: var(--neutral-white);
+  border-radius: 4px;
+  padding: 14px 32px;
+  transition: 0.2s;
+}
+#banner .bannerCnt a:hover {
+  background: transparent;
+  color: var(--brand-primary);
+  border: 2px solid var(--brand-primary);
+  padding-right: 32px;
+}
+
+/* banner end */
+/* client */
+#client {
+  padding: 40px 0;
+}
+#client h2 {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 122%;
+  text-align: center;
+  color: var(--neutral-d-grey);
+  margin-bottom: 8px;
+}
+#client p {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: var(--neutral-grey);
+  margin-bottom: 16px;
+}
+
+#client ul {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: 20px;
+}
+
+#client ul li{
+      display: inline-block;
+      justify-content: space-between;
+      padding: 0 70px;
+}
+/* client end */
